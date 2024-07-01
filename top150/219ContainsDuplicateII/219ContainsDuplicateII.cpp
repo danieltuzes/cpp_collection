@@ -13,7 +13,6 @@
 #include <cmath>
 
 using namespace std;
-using namespace std;
 
 class Solution
 {
@@ -28,7 +27,7 @@ public:
                 occurred[num] = i;
             else
             {
-                if (occurred[num] - i <= k)
+                if (i - occurred[num] <= k)
                     return true;
                 occurred[num] = i;
             }
